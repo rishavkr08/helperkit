@@ -1,12 +1,41 @@
-.card-button {
-  transform: translate(-50%, 125%);
-}
-.card:hover {
-  border-color: #008bf8;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+.card {
+  color: white;
+  background: linear-gradient(170deg, rgba(0, 31, 63, 0.867) 0%, #00203FFF 100%);
+  transition: all 0.4s;
+  box-shadow: 0px 0px 10px 5px  #00203FFF;
+  font-family: cursive;
 }
 
-.card:hover .card-button {
-  transform: translate(-50%, 50%);
+.card:hover {
+  box-shadow: 0px 0px 10px 5px  #00203FFF;
+  color: #00203FFF;
+  background: white;
+  font-family: Papyrus, fantasy;
+}
+
+.first-content {
+  height: fit-content;
+  transition: all 0.4s;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0px;
+  width: 0px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg);
+}
+
+.card:hover .second-content {
   opacity: 1;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  transform: rotate(0deg);
 }
